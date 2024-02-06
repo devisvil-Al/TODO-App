@@ -1,0 +1,30 @@
+.modal{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal_content {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #50C2C9;
+}
+.title{
+    color: white;
+}
+.form{
+    display: flex;
+}
+.input{
+    width: 300px;
+   font-size: 20px;
+   padding: 0 5px;
+}

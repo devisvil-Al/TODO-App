@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+
+.app {
+  position: relative;
+  /* overflow: hidden; */
+  width: 100%;
+  margin: auto;
+}
+
+/* @media (min-width: 768px) {
+  .app {
+    width: 768px;
+  }
+} */
+

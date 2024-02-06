@@ -1,0 +1,203 @@
+.date_container {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.containerChrckbox {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    border: 1 solid white;
+    z-index: 9;
+}
+
+.input{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.input+.label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  .input+.label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .input+.label_check::before {
+    background-image: url(/public/images/checked-svgrepo-com.svg);
+    width: 20px;
+    height: 20px;
+    background-size: 90%;
+  }
+
+  .input+.label_check_dark::before {
+    background-image: url(/public/images/checked-svgrepo-activ.svg);
+    width: 20px;
+    height: 20px;
+    background-size: 90%;
+  }
+
+.txt {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+
+.img {
+    margin-top: 90px;
+    position: relative;
+    z-index: 999;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.date_num {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    text-align: end;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.688%; 
+    letter-spacing: 1.08px;
+    background-color: rgba(0, 0, 0, 0.417);
+    border-radius: 100%;
+    margin-top: 90px;
+    position: absolute;
+    z-index: 998;
+    opacity: 0;
+    transition: 0.5s;
+}
+.avatar:hover .edit{
+    opacity: 1;
+    display: flex;
+    z-index: 1000;
+}
+
+.avatar_hidden {
+    display: none;
+}
+
+.modal {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0; 
+    left: 0px;
+    background: transparent;
+    border: 0;
+}
+
+.point_btn {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    border: 0;
+    background-color: #ffffff00;
+    transition: 0.6s;
+}
+.point_btn img {
+    width: 35px;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+@media (min-width: 550px) {
+    .input{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    .input+.label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+      }
+    
+      .input+.label::before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 5px;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+      }
+
+      .input+.label_check_dark::before {
+        background-image: url(/public/images/checked-svgrepo-activ.svg);
+        width: 30px;
+        height: 30px;
+        background-size: 90%;
+      }
+      
+      .input+.label_check::before {
+          background-image: url(/public/images/checked-svgrepo-com.svg);
+          width: 30px;
+          height: 30px;
+          background-size: 90%;
+        }
+        
+  }

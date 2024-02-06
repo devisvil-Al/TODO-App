@@ -1,0 +1,147 @@
+.inputs_text {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+}
+
+.tasks_cont {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 29px;
+}
+
+.label_cont {
+    display: flex; 
+    gap: 10px; 
+    position: relative;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px 10px 10px;
+    flex-direction: column;
+}
+.descriptionText{
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 8px 15px;
+}
+
+.btn {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100px;
+}
+
+.description {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.btn_del {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background-image: url(/public/images/plus-circle.png);
+    border: none;
+    background-color: white;
+    rotate: 225deg;
+    background-size: cover;
+}
+
+.editBtn {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100px;
+}
+
+.container_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dark_inp_txt{
+    color: white;
+}
+
+.dark_btn_del {
+    background-image: url(/public/images/1675005993_zefirka-club-p-belii-krest-na-chernom-fone-91.png);
+    rotate: 0deg;
+    border-radius: 50px;
+}
+
+.dark_label_cont {
+    background-color: #5c5c5c;
+    box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 70%);
+}
+
+.dark_btn {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+@media (min-width: 550px) {
+    .btn, .editBtn {
+        font-size: 22px;
+    }
+
+    .inputs_text {
+       font-size: 26px; 
+    }
+
+    .btn_del {
+        width: 43px;
+        height: 43px;
+    }
+
+    .label_cont {
+        padding: 20px 10px 10px;
+        gap: 14px;
+    }
+
+    .input{
+        width: 30px;
+        height: 30px;   
+    }
+    .descriptionText {
+        font-size: 22px;
+    }
+  }
+
+  

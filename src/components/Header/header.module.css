@@ -1,0 +1,54 @@
+.header_container {
+    background-image: url(/public/images/dashboard.png);
+    background-repeat: no-repeat;
+    gap: 18px;
+    background-color: #50C2C9;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px 15px 60px;
+}
+.dark{
+    background-color: rgb(49 49 49);
+}
+
+.visible {
+  max-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.not_visible {
+  max-height: 0;
+}
+
+.header {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115.688%; 
+    letter-spacing: 1.08px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.scroll_header_container {
+  max-height: 0;
+}
+
+.header_not_visible {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: 0;
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,162 @@
+.title {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.84px;
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 15px;
+    width: 100%;
+    background-color: white;
+    border-radius: 24px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    height: calc(100vh - 480px);
+    min-height: 320px;
+}
+
+.inp {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin: 0 0 15px 0;
+    padding: 0 5px;
+}
+
+
+.textarea {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 5px;
+    width: 100%;
+    height: calc(100vh - 720px);
+    margin: 0 0 10px 0;
+    border: 2px solid black;
+    padding: 5px;
+    resize: none;
+    min-height: 80px;
+}
+
+.btn_task {
+    position: absolute;
+    border: 0;
+    background-color: #FFF;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background-image: url(/public/images/plus-circle.png);
+    transform: rotate(135deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.create_btn {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 115.688%; 
+    letter-spacing: 0.72px;
+    border-radius: 4px;
+}
+
+.dark_title {
+    color: white;
+}
+
+.dark_container {
+    background-color: #28292c;
+}
+
+.dark_inp {
+    color: white;
+    background-color: #5c5c5c;
+}
+.dark_inp::placeholder {
+    color: white;
+}
+
+.dark_textarea {
+    color: white;
+    background-color: #5c5c5c;
+}
+
+.dark_textarea::placeholder {
+    color: white;
+}
+
+.dark_btn_task {
+    background-image: url(/public/images/1675005993_zefirka-club-p-belii-krest-na-chernom-fone-91.png);
+    transform: rotate(0deg);
+    border-radius: 50px;
+}
+
+.create_not_visible {
+    min-height: calc(100vh - 150px);
+}
+
+.textarea_not_visible {
+    font-size: 16px;
+    width: 100%;
+    height: calc(100vh - 440px);
+    margin: 0 0 10px 0;
+    border: 2px solid black;
+    padding: 5px;
+    resize: none;
+}
+
+@media (min-width: 550px) {
+    .title {
+        font-size: 26px;
+    }
+
+    .inp {
+        font-size: 24px;
+        height: 40px;
+    }
+
+    .textarea {
+        font-size: 24px;
+        height: calc(100vh - 770px);
+    }
+
+    .create_btn {
+        font-size: 20px;
+    }
+
+    .btn_task {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        min-height: 365px;
+    }
+
+    .create_not_visible {
+        min-height: calc(100vh - 150px);
+    }
+  }
+
+  
